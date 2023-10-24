@@ -41,7 +41,11 @@ ascii_composer:
     Shift_L: commit_code #左shift提交字母
 ```
 
-写好保存，重启ibus
+横排设置
+在```~/.config/ibus/rime/build/ibus_rime.yaml```中添加
 ```
-ibus restart
+style:
+   horizontal: true
 ```
+
+然后重新部署
