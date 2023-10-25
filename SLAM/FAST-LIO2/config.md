@@ -30,8 +30,7 @@ sudo apt-get install libeigen3-dev
 
 ```
 git clone https://github.com/Livox-SDK/Livox-SDK.git
-cd Livox-SDK
-mkdir build && cd build
+cd Livox-SDK/build
 cmake ..
 make -j4
 sudo make install
@@ -43,8 +42,17 @@ sudo make install
 git clone https://github.com/Livox-SDK/livox_ros_driver.git ws_livox/src
 cd ws_livox
 catkin_make
-```
+
 配置环境变量
-```
 source ./devel/setup.sh
+```
+
+---
+
+*5、构建Fast-Lio2*
+```
+git clone https://github.com/hku-mars/FAST_LIO.git
+cd FAST_LIO
+git submodule update --init //获取子模组ikd-Tree
+
 ```
