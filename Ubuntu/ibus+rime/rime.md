@@ -18,15 +18,17 @@ sudo apt install ibus-rime
 
 **2、系统设置**
 
-Ubuntu 22.04版本：设置->-键盘->输入源->加号->汉语->中文（Rime）
+Ubuntu 20.04版本：设置->区域与语言->输入源->加号->汉语->中文（Rime）
+
+Ubuntu 22.04版本：设置->键盘->输入源->加号->汉语->中文（Rime）
 
 ---
 
 **3、配置**
 
 ```
-cd ~/.config/ibus/rime/
-sudo gedit default.custom.yaml
+cd ~/.config/ibus/rime/build/
+sudo gedit default.yaml
 ```
 
 yaml中写入配置
@@ -48,4 +50,4 @@ style:
    horizontal: true
 ```
 
-然后重新部署
+然后重新部署（不同步）

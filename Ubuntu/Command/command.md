@@ -74,11 +74,11 @@ sudo apt-get check 检查是否有损坏的依赖
 sudo apt-get clean 清理所有软件缓存（即缓存在/var/cache/apt/archives目录里的deb包）
 
 2）dpkg(Debian package) 包管理工具
-dpkg -i <.deb后缀的软件名>  //i 表示 install
-dpkg -r <包的名字>  //r 表示 remove, 此种方法会保留配置文件
-dpkg -P <包的名字>  //直接全删了，配置也不会保留
-dpkg -l            //查看安装列表
-dpkg -S <包的名字>  //搜索某个包
+sudo dpkg -i <.deb后缀的软件名>  //i 表示 install
+sudo dpkg -r <包的名字>  //r 表示 remove, 此种方法会保留配置文件
+sudo dpkg -P <包的名字>  //直接全删了，配置也不会保留
+sudo dpkg -l            //查看安装列表
+sudo dpkg -S <包的名字>  //搜索某个包
 ```
 
 ---
