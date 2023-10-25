@@ -70,3 +70,13 @@ https://sourceforge.net/projects/win32diskimager/
 ---
 
 **/home, 类似Window中的D盘，存储个人数据**
+
+---
+
+### 7、同步Windows和Ubuntu时间
+
+```
+sudo apt-get install ntpdate
+sudo ntpdate time.windows.com
+sudo hwclock --localtime --systohc
+```
