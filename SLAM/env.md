@@ -14,7 +14,7 @@ make -j8
 sudo make install
 
 使用，cmake时添加
-set(PCL_DIR /usr/local/pcl-1.8/share/pcl-1.8)
+set(PCL_DIR "/usr/local/pcl-1.8/share/pcl-1.8")
 find_package(PCL 1.8 REQUIRED)
 
 可选
