@@ -73,10 +73,23 @@ https://sourceforge.net/projects/win32diskimager/
 
 ---
 
-### 7、同步Windows和Ubuntu时间
+### 注意事项及可能遇到的问题
 
+1）同步Windows和Ubuntu时间
 ```
 sudo apt-get install ntpdate
 sudo ntpdate time.windows.com
 sudo hwclock --localtime --systohc
+```
+2）Ubuntu安装后，附加驱动更改
+```
+软件和更新->ubuntu软件->下载自->其他站点->选择最佳的服务器->附加驱动(470专有)
+```
+---
+3）ubuntu20开机界面花屏
+```
+附加驱动(470专有)->重启
+或者
+sudo gedit /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"修改为GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
 ```
