@@ -55,3 +55,18 @@ find_package(PCL 1.8 REQUIRED)
 *1、fatal error: opencv/cv.h: No such file or directory*
 
 把源码中的#include <opencv/cv.h>改成#include <opencv2/opencv.hpp>
+
+### 运行
+```
+source ~/horizon_ws/devel/setup.bash
+rosbag:
+roslaunch loam_horizon loam_livox_horizon.launch
+rosbag play YOUR_DOWNLOADED.bag
+```
+
+### 信息查询
+```
+rostopic list  #查看所有topic
+rosrun rqt_graph rqt_graph  #查看node之间的关系
+rosrun rqt_tf_tree rqt_tf_tree  #查看tf关系
+```
