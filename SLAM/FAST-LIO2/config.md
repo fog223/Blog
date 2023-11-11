@@ -36,17 +36,6 @@ make -j4
 sudo make install
 ```
 
-*4、Livox ROS Driver安装*
-
-```
-git clone https://github.com/Livox-SDK/livox_ros_driver.git ws_livox/src
-cd ws_livox
-catkin_make
-
-配置环境变量
-source ./devel/setup.sh
-```
-
 ---
 
 *5、构建Fast-Lio2*
@@ -54,5 +43,11 @@ source ./devel/setup.sh
 git clone https://github.com/hku-mars/FAST_LIO.git
 cd FAST_LIO
 git submodule update --init //获取子模组ikd-Tree
-
+cd ..
+git clone https://github.com/Livox-SDK/livox_ros_driver.git
 ```
+
+### 注意事项
+
+*1、ceres版本2.1.0中，livox_ros_driver编译需要将C++14修改为C++17,
+需要g++ 7.0以上的版本*

@@ -83,13 +83,18 @@ sudo hwclock --localtime --systohc
 ```
 2）Ubuntu安装后，附加驱动更改
 ```
-软件和更新->ubuntu软件->下载自->其他站点->选择最佳的服务器->附加驱动(470专有)
+软件和更新->ubuntu软件->下载自->其他站点->选择最佳的服务器->附加驱动(525专有)
 ```
 ---
 3）ubuntu20开机界面花屏
 ```
-附加驱动(470专有)->重启
+附加驱动(525专有)->重启
 或者
 sudo gedit /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"修改为GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+```
+---
+4）拯救者R9000P安装 合上盖子后，再打开，屏幕黑屏
+```
+附加驱动(525专有)->重启
 ```
