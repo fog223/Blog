@@ -1,5 +1,9 @@
 # Ubuntu安装配置Rime输入法
 
+### 非搜狗输入法的原因：
+
+搜狗输入法与Clion冲突
+
 ### 输入法平台：ibus
 
 IBus 全称 Intelligent Input Bus是下一代输入法框架（或者说“平台”）。 项目现托管于 Google Code - [ibus](https://code.google.com/p/ibus/) 此项目包含了世界多数语言的文字输入需求——由世界多个国家开发者维护。支持多种输入法。
