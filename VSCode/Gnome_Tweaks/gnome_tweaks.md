@@ -139,6 +139,8 @@ sudo apt install chrome-gnome-shell
 
 ### 壁纸和锁屏壁纸
 
+壁纸推荐：https://wallhaven.cc/
+
 壁纸，右键更换即可
 
 锁屏壁纸：`Lock screen background`插件
